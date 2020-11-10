@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+#issueTrackerURL="https://github.com/bioastroiner/${}/issues" #optional
+[[mods]]
+    modId="sunflowerseeds"
+    version="${version}"
+    displayName="Sunflower Seeds"
+
+    #updateJSONURL="www.google.com" -looks like filling this with nonesense causes client to not load
+    displayURL="www.reddit.com/r/feedthememes"
+    logoFile="logo.png"
+    credits="You"
+    authors="Bioastroiner"
+    description='''
+
+    '''
+[[dependencies.sunflowerseeds]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.sunflowerseeds]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
