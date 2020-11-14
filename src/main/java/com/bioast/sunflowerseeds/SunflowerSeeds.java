@@ -1,6 +1,9 @@
 package com.bioast.sunflowerseeds;
 
 import com.bioast.sunflowerseeds.init.ItemsMod;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -39,4 +42,11 @@ public class SunflowerSeeds
     private void doClientStuff(final FMLClientSetupEvent event) {
 
     }
+
+    public static ItemGroup itemGroup = new ItemGroup(modid) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(Items.SUNFLOWER);
+        }
+    };
 }
